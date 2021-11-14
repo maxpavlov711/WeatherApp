@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="79F-QI-E1a">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table Weather-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Homework22TableWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xdX-yL-dgc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xdX-yL-dgc" secondAttribute="bottom" id="MNG-UW-d9E"/>
+                            <constraint firstItem="xdX-yL-dgc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YcT-cQ-f3h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xdX-yL-dgc" secondAttribute="trailing" id="fuE-yT-fPt"/>
+                            <constraint firstItem="xdX-yL-dgc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m1J-Yn-ihL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Table Weather" id="swR-vC-FpF">
+                        <barButtonItem key="rightBarButtonItem" title="Добавить" id="nr7-VR-vRY">
+                            <connections>
+                                <action selector="addButtonAction:" destination="BYZ-38-t0r" id="2L2-yO-Wfv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="xdX-yL-dgc" id="86L-CE-LRT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="77.678571428571431"/>
+        </scene>
+        <!--GoogleMap-->
+        <scene sceneID="Lpr-oy-CXR">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="7Zk-Rq-Cqs" customClass="MapViewController" customModule="Homework22TableWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBh-mR-sZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZB-Uh-M5D" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7Zk-Rq-Cqs" id="be0-h6-UeP"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oIn-R7-1sF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FZB-Uh-M5D" firstAttribute="leading" secondItem="oIn-R7-1sF" secondAttribute="leading" id="6Vk-YV-rg0"/>
+                            <constraint firstItem="oIn-R7-1sF" firstAttribute="trailing" secondItem="FZB-Uh-M5D" secondAttribute="trailing" id="WjT-Qv-YCb"/>
+                            <constraint firstItem="oIn-R7-1sF" firstAttribute="bottom" secondItem="FZB-Uh-M5D" secondAttribute="bottom" id="Yx1-9R-87C"/>
+                            <constraint firstItem="FZB-Uh-M5D" firstAttribute="top" secondItem="oIn-R7-1sF" secondAttribute="top" id="bMW-7Y-b64"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GoogleMap" id="MCf-OO-DCq">
+                        <barButtonItem key="leftBarButtonItem" title="Back " id="7CX-jX-bbT">
+                            <connections>
+                                <action selector="backButtonAction:" destination="7Zk-Rq-Cqs" id="uSx-GO-bvl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="d2b-x7-ewR">
+                            <connections>
+                                <action selector="saveButtonAction:" destination="7Zk-Rq-Cqs" id="6Pu-ii-g6A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="FZB-Uh-M5D" id="m9g-G5-jC5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ys8-1b-LG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2718.840579710145" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iZg-eF-tGU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="79F-QI-E1a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ghv-uK-Dxo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Iog-64-HT1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWG-4J-9i8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hUi-qK-byp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nnF-cT-gvO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vpy-ad-0iu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Zk-Rq-Cqs" kind="relationship" relationship="rootViewController" id="6IH-RP-wnu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2V-bK-nQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

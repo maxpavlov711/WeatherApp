@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="KGk-i7-Jjw" customClass="WeaCell" customModule="Homework22TableWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27T-S8-302">
+                        <rect key="frame" x="8" y="8" width="332" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wj-LI-gOn">
+                        <rect key="frame" x="8" y="37" width="332" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9a-YA-H0G">
+                        <rect key="frame" x="8" y="66" width="332" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCA-PY-QD2">
+                        <rect key="frame" x="8" y="95" width="332" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l9a-YA-H0G" firstAttribute="top" secondItem="3Wj-LI-gOn" secondAttribute="bottom" constant="8" id="Hhd-f1-mfR"/>
+                    <constraint firstItem="27T-S8-302" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="MTa-kL-JDY"/>
+                    <constraint firstAttribute="bottom" secondItem="tCA-PY-QD2" secondAttribute="bottom" constant="20" symbolic="YES" id="VBF-yE-HVO"/>
+                    <constraint firstAttribute="trailing" secondItem="l9a-YA-H0G" secondAttribute="trailing" constant="8" id="W7k-vR-tTq"/>
+                    <constraint firstAttribute="trailing" secondItem="27T-S8-302" secondAttribute="trailing" constant="8" id="YeA-Zn-XI2"/>
+                    <constraint firstItem="l9a-YA-H0G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="n2S-xR-VPv"/>
+                    <constraint firstItem="tCA-PY-QD2" firstAttribute="top" secondItem="l9a-YA-H0G" secondAttribute="bottom" constant="8" id="nXn-PQ-NbY"/>
+                    <constraint firstAttribute="trailing" secondItem="3Wj-LI-gOn" secondAttribute="trailing" constant="8" id="pAJ-Mn-jsL"/>
+                    <constraint firstAttribute="trailing" secondItem="tCA-PY-QD2" secondAttribute="trailing" constant="8" id="pZ3-7w-9gi"/>
+                    <constraint firstItem="tCA-PY-QD2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="q0x-kK-KlT"/>
+                    <constraint firstItem="3Wj-LI-gOn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="wCy-M1-rOK"/>
+                    <constraint firstItem="27T-S8-302" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="xFg-td-56T"/>
+                    <constraint firstItem="3Wj-LI-gOn" firstAttribute="top" secondItem="27T-S8-302" secondAttribute="bottom" constant="8" id="zff-gL-q5i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cityLabel" destination="3Wj-LI-gOn" id="Llx-Zc-zxR"/>
+                <outlet property="countryLabel" destination="27T-S8-302" id="WoU-AD-Umk"/>
+                <outlet property="speedLabel" destination="tCA-PY-QD2" id="FBb-re-Zxu"/>
+                <outlet property="temperatureLabel" destination="l9a-YA-H0G" id="fQE-eP-wd6"/>
+            </connections>
+            <point key="canvasLocation" x="123.18840579710145" y="99.776785714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
